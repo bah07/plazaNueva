@@ -1,0 +1,107 @@
+﻿<!--Contenido-->
+<div class="w3-container w3-section">
+    <div class="w3-row">
+        <div class="w3-col s12 m12 l8">
+            <!--3/12 Slider-->
+            <!--La clase slides la ha de tener el elemento que va a ser intercambiado
+                La clase w3-animate-top es una animacion que hace entrar la imagen por arriba-->
+            <div class="w3-padding w3-center">
+                <img src="images/fachada.jpg" alt="Fachada" class="slideAuto w3-fluid w3-round">
+                <img src="images/habitacionDoble.jpg" alt="Doble" class="slideAuto  w3-fluid w3-round">
+                <img src="images/habitacionDoble2.jpg" alt="Doble" class="slideAuto  w3-fluid w3-round">
+                <img src="images/habitacionDoble3.jpg" alt="Doble" class="slideAuto  w3-fluid w3-round">
+                <img src="images/habitacionMarimonio2.jpg" alt="Habitacion matrimonio" class="slideAuto  w3-fluid w3-round">
+                <img src="images/habitacionMatrimonio.jpg" alt="Habitacion matrimonio" class="slideAuto  w3-fluid w3-round">
+                <img src="images/habitacionSuite.jpg" alt="Suite" class="slideAuto  w3-fluid w3-round">
+                <img src="images/habitacionTriple.jpg" alt="Habitacion triple" class="slideAuto  w3-fluid w3-round">
+            </div>
+        </div>
+
+        <!--3/12 Formulario Reserva o contacto-->
+        <div class="w3-col s12 m12 l4 w3-padding-medium w3-center w3-card-8">
+            <header class="w3-container w3-light-grey">
+                <h4>Contacte con nosotros</h4>
+            </header>
+            <div class="w3-container w3-justify">
+                <form action="" onsubmit="alert('Gracias, en breve recibira una respuesta.');">
+                    <p>Nombre y apellidos:</p>
+                    <input type="text" class="w3-input" name="name" required>
+                    <p>Email:</p>
+                    <input type="text" class="w3-input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
+                    <p>Telefono:</p>
+                    <input type="text" class="w3-input" name="phone" pattern="[0-9+()]+{9,16}" required>
+                    <p>Consúltenos lo que desee:</p>
+                    <input type="text" class="w3-input" name="desc" required>
+                    <p><button class="w3-btn w3-light-green">Enviar</button></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--6/12 Introduccion-->
+    <div class="w3-row">
+        <div class="w3-col s12 m12 l12 w3-padding w3-justify w3-large">
+            El Hotel Plaza Nueva está situado en el pleno centro monumental, comercial y administrativo de Granada, a 10 minutos de la Alhambra.
+            El hotel ofrece una amplia y eficiente gama de servicios extra que satisfarán cualquier necesidad que le surja, reservas a shows de
+            flamenco o visitas turísticas por la ciudad y la Alhambra. El hotel le ofrece 25 amplias y luminosas habitaciones repartidas sobre 3
+            plantas con ascensor. Cada planta del hotel y cada habitación poseen un nombre y encanto propio. Este nombre es una representación
+            de un evento importante en la vida e historia de Granada. No tienen tarjetas magnéticas para abrir las puertas de las habitaciones,
+            preferimos la originalidad que proporciona una tradicional llave. El hotel ofrece el servicio de desayuno continental en la cafetería,
+            donde podrá disfrutar de conexión WIFI. Asimismo podrá obtener mediante pago del servicio conexión WIFI en su habitación. Confiamos
+            en que disfrute plenamente su estancia entre nosotros así como de nuestra bella ciudad. Número de registro del hotel en la consejería
+            de turismo de Andalucía: H/GR/01181
+        </div>
+    </div>
+
+    <!--Secundary content area -->
+    <div class="w3-section">
+        <!--1/3 Situación-->
+        <div class="w3-col s12 m12 l4 w3-padding w3-center w3-navbar">
+            <a href="mapa.html">
+                <div class="w3-card-12 w3-hover-shadow" style="width:100%">
+                    <header class="w3-container w3-light-grey">
+                        <h4>Situación</h4>
+                    </header>
+                    <img src="images/alhambra.jpg" alt="alhambra" style="width:100%">
+                    <div class="w3-container w3-justify">
+                        <p>El Hotel Plaza Nueva está situado en el pleno centro monumental, comercial y administrativo de Granada, a 10 minutos de la Alhambra.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!--1/3 Habitaciones-->
+        <div class="w3-col s12 m12 l4 w3-padding w3-center w3-navbar">
+            <a href="habitaciones.html">
+                <div class="w3-card-12 w3-hover-shadow" style="width:100%">
+                    <header class="w3-container w3-light-grey">
+                        <h4>Habitaciones</h4>
+                    </header>
+                    <img src="images/habitacionDoble3.jpg" alt="habitacionesdobles" style="width:100%">
+
+                    <div class="w3-container w3-justify">
+                        <p>Nuestras habitaciones con vistas a Plaza Nueva y a la Torre de la Vela. Disfrute de esta experiencia por un pequeño suplemento.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--1/3 Commodities-->
+        <div class="w3-col s12 m12 l4 w3-padding w3-center w3-navbar">
+            <a href="promociones.html">
+                <div class="w3-card-12 w3-hover-shadow" style="width:100%;">
+                    <header class="w3-container w3-light-grey">
+                        <h4>Commodities</h4>
+                    </header>
+                    <img src="images/sierranevada.jpg" alt="Norway" style="width:100%">
+
+                    <div class="w3-container w3-justify">
+                        <h5>Visita Sierra Nevada</h5>
+                        <p>Excursiones de esquí con monitores especializados</p>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script>carousel();</script>
+</div>

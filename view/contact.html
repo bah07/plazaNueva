@@ -1,0 +1,21 @@
+﻿<!-- CONTENT PAGE contact -->
+<div class="w3-col s12 m12 l8 w3-padding-medium w3-center w3-card-8">
+    <header class="w3-container w3-light-grey">
+        <h4>Contacte con nosotros</h4>
+    </header>
+    <div class="w3-container w3-justify">
+        <form action="index.php" method="post" name="contact">
+            <!--Este dato es para mandarlo en el metodo run y que procese el formulario la funcion correspondiente-->
+            <input type="hidden" name="option" value="6"/>
+            <p>Nombre y apellidos:</p>
+            <input type="text" class="w3-input" name="data" required>
+            <p>Email:</p>
+            <input type="text" class="w3-input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
+            <p>Telefono:</p>
+            <input type="text" class="w3-input" name="phone" pattern="[0-9+()]{9,15}" required>
+            <p>Consúltenos lo que desee:</p>
+            <input type="text" class="w3-input" name="desc" required>
+            </p><button class="w3-btn w3-light-green" type="submit">Enviar</button></p>
+        </form>
+    </div>
+</div>

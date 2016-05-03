@@ -1,0 +1,131 @@
+﻿<!-- CONTENT PAGE promotions -->
+<div class="w3-section w3-container">
+
+    <!--slider de ofertas-->
+    <div class="w3-col s12 m12 l6">
+        <div class="w3-justify w3-padding-medium w3-large">
+            <h2>Ofertas</h2>
+            <p>Disfrute de las promociones exclusivas de nuestra web. Reservando aquí podrá conseguir rebajas y descuentos inigualables.</p>
+        </div>
+
+        <div class="w3-col s12 m12 l12 w3-center w3-padding-medium">
+            <button class="w3-btn" onclick="plusDivs(-1, 'slideA')">&#10094; Ant</button>
+            <button class="w3-btn" onclick="currentDiv(1, 'slideA')">1</button>
+            <button class="w3-btn" onclick="currentDiv(2, 'slideA')">2</button>
+            <button class="w3-btn" onclick="currentDiv(3, 'slideA')">3</button>
+            <button class="w3-btn" onclick="plusDivs(1, 'slideA')">Sig &#10095;</button>
+        </div>
+
+        <div class="w3-col s12 m12 l12 w3-center w3-padding">
+            <!--Los siguientes div estan en display:none la funcion js los activara uno por uno para hacer el slide-->
+            <div class="slideA w3-animate-left w3-padding">
+                <div class="w3-card-12 w3-hover-shadow">
+                    <header class="w3-container w3-light-grey">
+                        <h4>Oferta dos noches</h4>
+                    </header>
+                    <img src="images/fachada.jpg" alt="Fachada" class="w3-fluid">
+                    <div class="w3-container w3-justify">
+                        <p>Disfrute de un 10% de descuento en estancias de un mínimo de dos noches</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slideA w3-animate-left w3-padding w3-tooltip">
+                <div class="w3-card-12 w3-hover-shadow">
+                    <header class="w3-container w3-light-grey">
+                        <h4>Oferta 10% de descuento</h4>
+                    </header>
+                    <img src="images/EntradorHotel.jpg" alt="Entrada hotel" class="w3-fluid">
+                    <div class="w3-container w3-justify">
+                        <p>Disfrute de un 10% de descuento con esta tarifa no reembolsable</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slideA w3-animate-left w3-padding w3-tooltip">
+                <div class="w3-card-12 w3-hover-shadow">
+                    <header class="w3-container w3-light-grey">
+                        <h4>Oferta reserva anticipada</h4>
+                    </header>
+                    <img src="images/habitacionMarimonio2.jpg" alt="Habitacion matrimonio" class="w3-fluid">
+                    <div class="w3-container w3-justify">
+                        <p>Disfrute de un 10% de descuento reservando con 21 días de antelación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--slider de actividades extras-->
+    <div class="w3-col s12 m12 l6">
+        <div class="w3-justify w3-padding-medium w3-large">
+            <h2>Actividades</h2>
+            <p>Contrate algunas de nuestras actividades extras para completar su visita (precios no incluidos en la estancia)</p>
+        </div>
+
+        <div class="w3-col s12 m12 l12 w3-center w3-padding-medium">
+            <button class="w3-btn" onclick="plusDivs(-1, 'slideB')">&#10094; Ant</button>
+            <button class="w3-btn" onclick="currentDiv(1, 'slideB')">1</button>
+            <button class="w3-btn" onclick="currentDiv(2, 'slideB')">2</button>
+            <button class="w3-btn" onclick="currentDiv(3, 'slideB')">3</button>
+            <button class="w3-btn" onclick="currentDiv(4, 'slideB')">4</button>
+            <button class="w3-btn" onclick="plusDivs(1, 'slideB')">Sig &#10095;</button>
+        </div>
+
+        <div class="w3-col s12 m12 l12 w3-center w3-padding">
+            <!--Los siguientes div estan en display:none la funcion js los activara uno por uno para hacer el slide-->
+            <div class="slideB w3-animate-right w3-padding">
+                <div class="w3-card-12 w3-hover-shadow">
+                    <header class="w3-container w3-light-grey">
+                        <h4>Visita guiada a la Alhambra (desde 14€)</h4>
+                    </header>
+                    <img src="images/alhambra.jpg" alt="Alhambra" class="w3-fluid">
+                    <div class="w3-container w3-justify">
+                        <p>Contrate una visita guiada al monumento mas característico de la ciudad y el mas conocido de España. Una ciudad medieval a tan solo 10 minutos a pie.</p>
+                        <p><a href="http://www.alhambra-patronato.es/index.php/Tarifas/196/0/" target="_blank">Más info.</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slideB w3-animate-right w3-padding w3-tooltip">
+                <div class="w3-card-12 w3-hover-shadow">
+                    <header class="w3-container w3-light-grey">
+                        <h4>Viaje a sierra nevada (desde 34€)</h4>
+                    </header>
+                    <img src="images/sierranevada.jpg" alt="Sierra Nevada" class="w3-fluid">
+                    <div class="w3-container w3-justify">
+                        <p>Realice una escapada a sierra nevada, compre aquí su forfait (desde 34€) y disfrute de un dia de nieve esquiando o simplemente disfrutando de un paseo.</p>
+                        <p><a href="http://sierranevada.es/es/invierno/forfait/" target="_blank">Más info.</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slideB w3-animate-right w3-padding w3-tooltip">
+                <div class="w3-card-12 w3-hover-shadow">
+                    <header class="w3-container w3-light-grey">
+                        <h4>Baños árabes Hamman (desde 28€)</h4>
+                    </header>
+                    <img src="images/hamman.jpg" alt="Baños Árabes" class="w3-fluid">
+                    <div class="w3-container w3-justify">
+                        <p>Relajese como lo hacían hace 500 años disfrutando de baños y masajes en "Baños Árabes Hamman".</p>
+                        <p><a href="http://www.hammamalandalus.com/" target="_blank">Más info.</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slideB w3-animate-right w3-padding w3-tooltip">
+                <div class="w3-card-12 w3-hover-shadow">
+                    <header class="w3-container w3-light-grey">
+                        <h4>Tren turístico (desde 8€)</h4>
+                    </header>
+                    <img src="images/trenturistico.jpg" alt="Tren" class="w3-fluid">
+                    <div class="w3-container w3-justify">
+                        <p>Visite toda la ciudad cómodamente en el tren turístico de granada comprando aquí sus billetes.</p>
+                        <p><a href="http://www.granadadirect.com/transporte/tren-turistico-granada/" target="_blank">Más info.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>showDivs(1)</script>
+</div>
