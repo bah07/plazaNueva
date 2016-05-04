@@ -17,6 +17,33 @@ function carousel() {
     setTimeout(carousel, 5000);
 }
 
+
+var slideBarIndex = 0;
+
+function funSlideBar() {
+    var i;
+    var x = document.getElementsByClassName("slideBar");
+
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    slideBarIndex++;
+
+    if (slideBarIndex > x.length) {
+        slideBarIndex = 1
+    }
+    x[slideBarIndex - 1].style.display = "block";
+    setTimeout(funSlideBar, 8000);
+}
+
+
+
+
+
+
+
+
+
 //Slide manual
 var slideIndexA = 1;
 var slideIndexB = 1;

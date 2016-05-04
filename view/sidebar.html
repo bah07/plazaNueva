@@ -1,20 +1,92 @@
-﻿<div class="w3-col s12 m12 l4 w3-padding-medium w3-center w3-card-8">
-    <header class="w3-container w3-light-grey">
-        <h4>Contacte con nosotros</h4>
-    </header>
-    <div class="w3-container w3-justify">
-        <form action="index.php" method="post" name="contact">
-            <!--Este dato es para mandarlo en el metodo run y que procese el formulario la funcion correspondiente-->
-            <input type="hidden" name="option" value="6" />
-            <p>Nombre y apellidos:</p>
-            <input type="text" class="w3-input" name="data" required>
-            <p>Email:</p>
-            <input type="text" class="w3-input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
-            <p>Telefono:</p>
-            <input type="text" class="w3-input" name="phone" pattern="[0-9+()]{9,15}" required>
-            <p>Consúltenos lo que desee:</p>
-            <input type="text" class="w3-input" name="desc" required>
-            </p><button class="w3-btn w3-light-green" type="submit">Enviar</button></p>
-        </form>
-    </div>
-</div>
+ <!---------------------------------sidebar-------------------------------->
+   
+<!----------------------------slider de ofertas------------------------------------>
+<div class="w3-col s12 m12 l4 w3-padding-medium w3-center w3-card-8">
+     <div class="w3-justify w3-padding-medium w3-large">
+         <h2 class="w3-container w3-light-grey">Ofertas</h2>
+         <p>Disfrute de las promociones exclusivas de nuestra web. Reservando aquí podrá conseguir rebajas y descuentos inigualables.</p>
+     </div>
+
+     <div class="w3-col s12 m12 l12 w3-center w3-padding">
+         <!--Los siguientes div estan en display:none la funcion js los activara uno por uno para hacer el slide-->
+         <div class="slideBar w3-animate-top w3-padding">
+             <div class=" w3-hover-shadow">
+                 <header class="w3-container w3-light-grey">
+                     <h4>Oferta dos noches</h4>
+                 </header>
+                 <img src="images/fachada.jpg" alt="Fachada" class="w3-fluid">
+                 <div class="w3-container w3-justify">
+                     <p>Disfrute de un 10% de descuento en estancias de un mínimo de dos noches</p>
+                 </div>
+             </div>
+         </div>
+
+         <div class="slideBar w3-animate-top w3-padding w3-tooltip">
+             <div class="w3-hover-shadow">
+                 <header class="w3-container w3-light-grey">
+                     <h4>Oferta 10% de descuento</h4>
+                 </header>
+                 <img src="images/EntradorHotel.jpg" alt="Entrada hotel" class="w3-fluid">
+                 <div class="w3-container w3-justify">
+                     <p>Disfrute de un 10% de descuento con esta tarifa no reembolsable</p>
+                 </div>
+             </div>
+         </div>
+
+         <div class="slideBar w3-animate-top w3-padding w3-tooltip">
+             <div class="w3-hover-shadow">
+                 <header class="w3-container w3-light-grey">
+                     <h4>Oferta reserva anticipada</h4>
+                 </header>
+                 <img src="images/habitacionMarimonio2.jpg" alt="Habitacion matrimonio" class="w3-fluid">
+                 <div class="w3-container w3-justify">
+                     <p>Disfrute de un 10% de descuento reservando con 21 días de antelación</p>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+     <!----------------------------slider de ofertas------------------------------------>
+
+
+     <!--------------------------Formulario de contacto-------------------->
+     <div class="w3-col s12 m12 l12 w3-padding-medium w3-center ">
+         <h4 class="w3-container w3-light-grey">Contacte con nosotros</h4>
+         <div class="w3-container w3-justify">
+             <form action="" onsubmit="alert('Gracias, en breve recibira una respuesta.');">
+                 <p>Nombre y apellidos:</p>
+                 <input type="text" class="w3-input" name="name" required>
+                 <p>Email:</p>
+                 <input type="text" class="w3-input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
+                 <p>Telefono:</p>
+                 <input type="text" class="w3-input" name="phone" pattern="[0-9+()]+{9,16}" required>
+                 <p>Consúltenos lo que desee:</p>
+                 <input type="text" class="w3-input" name="desc" required>
+                 <p><button class="w3-btn w3-light-green">Enviar</button></p>
+             </form>
+         </div>
+     </div>
+     <!--------------------------Formulario de contacto-------------------->
+
+     <!----------------------------Información de contacto----------------->
+     <div class="w3-col s12 m12 l12 w3-padding-medium w3-center ">
+         <div class="w3-justify w3-padding-medium w3-large">
+             <h2 class="w3-container w3-light-grey">Información de contacto</h2>
+             <div class="w3-col s11 m10 l10 w3-justify w3-medium">
+             <p>Hotel Plaza Nueva - Email:info@hotel-plazanueva.com</p>
+             <p>Calle Imprenta, nº 2. 18010 Granada, Granada, España</p>
+             <p>Teléfono: +34 958 215 273 - Fax: +34 958 225 765</p>
+         </div>
+         <div class="w3-col s1 m2 l2 w3-padding-medium w3-center">
+             <a href="#" class="normaltip" title="Linkedin"><img src="images/iconos_servicios/icon1.jpg" alt=""></a>
+             <a href="#" class="normaltip" title="Facebook"><img src="images/iconos_servicios/icon2.jpg" alt=""></a>
+             <a href="#" class="normaltip" title="Picasa"><img src="images/iconos_servicios/icon3.jpg" alt=""></a>
+             <a href="#" class="normaltip" title="Twitter"><img src="images/iconos_servicios/icon4.jpg" alt=""></a>
+         </div>
+         </div>
+     </div>
+ </div>
+
+
+
+<script>funSlideBar();</script>

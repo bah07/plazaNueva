@@ -6,7 +6,7 @@ abstract class dbAbstractModel {
     //Datos de conexion a la BBDD
     private static $serverName = "localhost";
     private static $userName = "root";
-    private static $pass = "rootm";
+    private static $pass = "";
     private static $dbName = "dbplazanueva";
     
     //Variable de conexion
