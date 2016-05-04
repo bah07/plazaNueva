@@ -92,7 +92,6 @@ function showDivs(n, nameDiv) {
 }
 
 function changeContextMenu(option) {
-    console.log("hoooola");
     var x = document.getElementsByClassName("menu");
     for (i = 0; i < x.length; i++) {
         x[i].className = "menu w3-padding-medium";
