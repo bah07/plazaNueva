@@ -37,13 +37,6 @@ function funSlideBar() {
 }
 
 
-
-
-
-
-
-
-
 //Slide manual
 var slideIndexA = 1;
 var slideIndexB = 1;
@@ -96,4 +89,14 @@ function showDivs(n, nameDiv) {
     if (nameDiv == "slideB") {
         x[slideIndexB - 1].style.display = "block";
     }
+}
+
+function changeContextMenu(option) {
+    console.log("hoooola");
+    var x = document.getElementsByClassName("menu");
+    for (i = 0; i < x.length; i++) {
+        x[i].className = "menu w3-padding-medium";
+    }
+    
+    document.getElementById("menu"+option).className = "menu w3-padding-medium w3-black";
 }

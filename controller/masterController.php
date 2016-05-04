@@ -2,6 +2,9 @@
 
 require('./model/roomsModel.php');
 
+require('./vendor/PHPMailer/class.phpmailer.php');
+require('./vendor/PHPMailer/class.smtp.php');
+
 class masterController {
     public $html;
 
@@ -17,6 +20,7 @@ class masterController {
         $this->html = str_replace('{menu}', $menu, $this->html);
         $this->html = str_replace('{footer}', $footer, $this->html);
         $this->html = str_replace('{sidebar}', $sidebar, $this->html);
+        $this->html = str_replace('{option}', $option, $this->html);
 
         $content = '';
         switch($option) {
@@ -60,14 +64,7 @@ class masterController {
                 break;
             case 6:
                 //Action que maneja los datos de formulario de contacto
-                //bool mail ( string $to , string $subject , string $message [, string $additional_headers [, string $additional_parameters ]] )
-                $to = 'b.arroba.h@gmail.com';
-                $subjet = 'Formulario contacto';
-                $txt = $subOption['desc'];
-                $headers = 'From: webPlazaNueva@granada.com';
-                mail($to, $subjet, $txt, $headers);
-                //var_dump($subOption);
-                //exit(0);    
+                $this->emailContact($subOption);
                 break;
             default:
                 $content = file_get_contents('./view/index.html');
@@ -86,6 +83,49 @@ class masterController {
         //fin ejm
 
         return $this->html;
+    }
+    
+    public function emailContact($data) {
+        $mail = new PHPMailer();
+        $mail->IsSMTP();
+
+        // la dirección del servidor, p. ej.: smtp.servidor.com
+        $mail->Host = "smtp.gmail.com";
+
+        // dirección remitente, p. ej.: no-responder@miempresa.com
+        $mail->setFrom('no-responder@plazanueva.com', 'Plaza Nueva Hotel');
+
+        // nombre remitente, p. ej.: "Servicio de envío automático"
+        $mail->FromName = "Envio automatico";
+
+        // asunto y cuerpo alternativo del mensaje
+        $mail->Subject = "Informacion cliente: ".$data['data'];
+        $mail->Body = "Mensaje: ".$data['desc'];
+        $mail->AltBody = "Cuerpo alternativo para cuando el visor no puede leer HTML en el cuerpo"; 
+
+        // si el cuerpo del mensaje es HTML
+        //$mail->MsgHTML($body);
+
+        // podemos hacer varios AddAdress
+        $mail->AddAddress("b.arroba.h@gmail.com", "Administrador");
+        //$mail->AddAddress($data['email'], "Remitente");
+
+        // si el SMTP necesita autenticación
+        $mail->SMTPAuth = true;
+
+        // credenciales usuario
+        $mail->Username = "b.arroba.h@gmail.com";
+        $mail->Password = "";
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port = 465;
+
+
+        if(!$mail->Send()) {
+            echo "Error sending: " . $mail->ErrorInfo;
+        } else {
+            header('Location: http://localhost/html/plazaNueva/index.php');
+        }
+
     }
 }
 
