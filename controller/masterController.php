@@ -108,14 +108,14 @@ class masterController {
 
         // podemos hacer varios AddAdress
         $mail->AddAddress("b.arroba.h@gmail.com", "Administrador");
-        //$mail->AddAddress($data['email'], "Remitente");
+        $mail->AddAddress($data['email'], "Remitente");
 
         // si el SMTP necesita autenticación
         $mail->SMTPAuth = true;
 
         // credenciales usuario
         $mail->Username = "b.arroba.h@gmail.com";
-        $mail->Password = "";
+        $mail->Password = "L056enQrr9";
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 
@@ -123,7 +123,7 @@ class masterController {
         if(!$mail->Send()) {
             echo "Error sending: " . $mail->ErrorInfo;
         } else {
-            header('Location: http://localhost/html/plazaNueva/index.php');
+            header('Location: http://localhost/plazaNueva/index.php');
         }
 
     }

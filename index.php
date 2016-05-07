@@ -18,7 +18,7 @@ if(!empty($_GET)) {
 
 //Si dan los parametros por $POST
 if(!empty($_POST)) {
-    if(isset($option)) {
+    if(isset($_POST['option'])) {
         $option = (int)$_POST['option'];
         $subOption = $_POST;
     }
