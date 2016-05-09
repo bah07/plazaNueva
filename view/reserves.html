@@ -12,7 +12,7 @@
         <li><a href="#" class="tablink" onclick="openCity(event,'confRese')">Resumen reserva</a></li>
     </ul>
 
-    <!-------------1)Sleccionar Habitacion-------------------------------------->
+    <!-------------1)Seleccionar Habitacion-------------------------------------->
     <div id="selecHab" class="w3-container w3-border reserva">
         <p class="w3-text-shadow">Búsqueda:</p>
         <select class="w3-select w3-row-padding " name="option">
@@ -105,15 +105,15 @@
     </div>
     
     <!-------------3)Datos Personales-------------------------------------->
-    <div id="datosPerso" class="w3-container w3-margin-24  reserva">
+    <div id="datosPerso" class="w3-container w3-margin-24   reserva">
         <h4 class="w3-text-shadow">Resumen Reserva: </h4>
-        <div class="w3-container w3-border">
+        <div class="w3-container  w3-light-grey">
                 
                 <p>Estancia:</p>
                 <p>17-05-2016 / 21-05-2016</p>
                 <p>Habitación Selecionada:</p>
-                <div class="w3-row w3-margin w3-card">
-                    <div class="w3-col s3 m3 l4">
+                <div class="w3-row w3-margin">
+                    <div class="w3-col s3 m6 l6">
                         <!--Foto habitacion-->
                         <img class="w3-image" src="images/habitacionMatrimonio.jpg" alt="Suite">
                     </div>
@@ -124,11 +124,10 @@
                     </div>
 
                 </div>
-                <p>Servicios Adicionales:Ninguno</p>
-            
         </div>
+        <h4 class="w3-text-shadow">Servicios Adicionales:Ninguno</h4>
     
-        <h4 class="w3-text-shadow">Datos Personales</h4>
+        <h4 class="w3-text-shadow">Datos Personales:</h4>
         
             
             <form class="w3-container w3-light-grey">
@@ -154,7 +153,7 @@
                
         
 
-        <h4 class="w3-text-shadow">Datos Tarjeta</h4>    
+        <h4 class="w3-text-shadow">Datos Tarjeta:</h4>    
             <form class="w3-container w3-light-grey">    
                 <select  name="option">
                     <option value="" disabled selected>Elegir Tarjeta</option>
@@ -165,38 +164,71 @@
                 
                 <p> Fecha de caducidad </p>
                 <input class="w3-input w3-border" type="text" placeholder="dd-mm-aaaa">
-
-
                 <p> Numero de tarjeta </p>
                 <input class="w3-input w3-border" type="text" placeholder="aaaa-bbbb-cccc-dddd">
-
-
                 <p> Codigo de seguridad </p>
                 <input class="w3-input w3-border" type="text" placeholder="xxx">
                 
             </form>
     </div>
 
-    
+    <!-----------Confirmación de reservas------------------------------------->
     <div id="confRese" class="w3-container w3-border reserva">
-        <h2>Tokyo</h2>
-        <p>Tokyo is the capital of Japan.</p>
+        <div class="w3-row">
+            <div class="w3-col s12 m6 l6 " >
+                <h4 class="w3-text-shadow">Resumen Alojamiento:</h4>
+                <p>Habitación: suite matrimonio</p>
+                <p>Número de habitaciones : 1 </p>
+                <p>Número de noches : 3 </p>
+                <p>Fecha entrada: 29 mayo 2016</p>
+                <p>Fecha salida: 2 junio 2016</p>
+            </div>
+            
+            <div class="w3-col s12 m6 l6 " >
+                <h4 class="w3-text-shadow">Datos Personales</h4>
+                <p>Nombre:Pepe</p>
+                <p>Primer Apellido:Fernandez</p>
+                <p>Segundo Apellido:Martinez</p>
+                <p>Pais:España</p>
+                <p>Ciudad:Granada</p>
+                <p>Telefono móvil:678912345</p>
+                <p>Email:fulanito@gmail.com</p>
+                <p>Comentarios: ventanas a la calle</p> 
+            </div>
+        </div>
+        <div class="w3-row">
+            <div class="w3-col s12 m6 l6 " >
+                <h4 class="w3-text-shadow">Servicios Adicionales</h4>
+                <p>Ninguno</p>
+            </div>
+            
+            <div class="w3-col s12 m6 l6 " >
+                <h4 class="w3-text-shadow">Datos tarjeta</h4>
+                <p>Tipo Tarjeta:Visa</p>
+                <p>Fecha caducidad:9/18</p>
+                <p>Numero de tarjeta: ****-****-****-1234</p>
+                <p>Código de tarjeta:198</p>
+            </div>
+        </div>
+        <div class="w3-row">
+            <div class="w3-col s12 m12 l12 " >
+                <p><button class="w3-btn w3-light-green w3-input w3-margin-top">Total a pagar: 180 euros </button></p>
+            </div>
+        </div>
+        <div class="w3-row">
+            <div class="w3-col s6 m3 l3 " >
+                
+            </div>
+            <div class="w3-col w3-margin-right s6 m3 l3 " >
+                <p><button class="w3-btn w3-red w3-input w3-margin-top">Anular Reserva </button></p>
+            </div>
+            <div class="w3-col w3-margin-left s6 m3 l3 " >
+                <p><button class="w3-btn w3-light-green w3-input w3-margin-top">Descargar Reserva </button></p>
+            </div>
+        </div>
+        
     </div>
 </div>
 
 
-<script>
-function openCity(evt, cityName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("reserva");
-  for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" w3-light-grey", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " w3-light-grey";
-}
-</script>
+<script>openCity(evt, cityName);</script>
