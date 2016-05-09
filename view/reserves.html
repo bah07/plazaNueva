@@ -9,7 +9,7 @@
         <li><a href="#" class="tablink" onclick="openCity(event,'selecHab')">Seleccionar Habitación</a></li>
         <li><a href="#" class="tablink" onclick="openCity(event,'serAdi')">Servicios Adicionales</a></li>
         <li><a href="#" class="tablink" onclick="openCity(event,'datosPerso')">Datos Personales</a></li>
-        <li><a href="#" class="tablink" onclick="openCity(event,'confRese')">Confirmación reserva</a></li>
+        <li><a href="#" class="tablink" onclick="openCity(event,'confRese')">Resumen reserva</a></li>
     </ul>
 
     <!-------------1)Sleccionar Habitacion-------------------------------------->
@@ -106,9 +106,9 @@
     
     <!-------------3)Datos Personales-------------------------------------->
     <div id="datosPerso" class="w3-container w3-margin-24  reserva">
+        <h4 class="w3-text-shadow">Resumen Reserva: </h4>
         <div class="w3-container w3-border">
-            <div class="w3-container  ">
-                <h4 class="w3-text-shadow">Resumen Reserva: </h4>
+                
                 <p>Estancia:</p>
                 <p>17-05-2016 / 21-05-2016</p>
                 <p>Habitación Selecionada:</p>
@@ -125,13 +125,14 @@
 
                 </div>
                 <p>Servicios Adicionales:Ninguno</p>
-            </div>
+            
         </div>
     
-        <div class="w3-container w3-border ">
+        <h4 class="w3-text-shadow">Datos Personales</h4>
+        
             
             <form class="w3-container w3-light-grey">
-                <p class="w3-text-shadow">Datos Personales<p/>
+                
                 <label>Nombre</label>
                 <input class="w3-input w3-border-0" type="text">
                 <label>Primer Apellido</label>
@@ -148,39 +149,39 @@
                 <input class="w3-input w3-border-0" type="text">
                 
                 <label class="w3-label">Comentarios</label>
-                <input class="w3-input" type="text"></p>
-            <div class="w3-container w3-border">    
-                <p class="w3-text-shadow">Datos Tarjeta<p/>
-                <select class="w3-container w3-row w3-select w3-col s3 m3 l3" name="option">
+                <input class="w3-input" type="text">
+            </form>    
+               
+        
+
+        <h4 class="w3-text-shadow">Datos Tarjeta</h4>    
+            <form class="w3-container w3-light-grey">    
+                <select  name="option">
                     <option value="" disabled selected>Elegir Tarjeta</option>
                     <option value="1">Visa</option>
                     <option value="2">MasterCard</option>
                     <option value="3">American Express</option>
                 </select>
-                <div class="w3-row w3-col ">
-                    <p> Fecha de caducidad </p>
-                    <input class="w3-input w3-border" type="text" placeholder="dd-mm-aaaa">
-                </div>
-                <div class="w3-row w3-col ">
-                    <p> Numero de tarjeta </p>
-                    <input class="w3-input w3-border" type="text" placeholder="aaaa-bbbb-cccc-dddd">
-                </div>
-                <div class="w3-row w3-col ">
-                    <p> Codigo de seguridad </p>
-                    <input class="w3-input w3-border" type="text" placeholder="xxx">
-                </div>
-            </div>
+                
+                <p> Fecha de caducidad </p>
+                <input class="w3-input w3-border" type="text" placeholder="dd-mm-aaaa">
+
+
+                <p> Numero de tarjeta </p>
+                <input class="w3-input w3-border" type="text" placeholder="aaaa-bbbb-cccc-dddd">
+
+
+                <p> Codigo de seguridad </p>
+                <input class="w3-input w3-border" type="text" placeholder="xxx">
+                
             </form>
-        </div>
-        
     </div>
+
     
     <div id="confRese" class="w3-container w3-border reserva">
         <h2>Tokyo</h2>
         <p>Tokyo is the capital of Japan.</p>
     </div>
-
-    
 </div>
 
 
