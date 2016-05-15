@@ -1,5 +1,22 @@
+<!--Consulta para reserva
+--------------------------------------------
+
+select ro.id idHabitacion
+from rooms as ro left join reserves as re on re.idroom = ro.id
+
+WHERE 
+	(re.entrancedate NOT BETWEEN '2016-05-23 11:00:00' and '2016-05-26 12:00:00' 
+	and re.exitdate not between '2016-05-23 11:00:00' and '2016-05-26 12:00:00')
+    or (re.entrancedate is null 
+    and re.exitdate is null)
+group by ro.id
+---------------------------------------------->
 <?php
 
+mb_internal_encoding('UTF-8'); 
+mb_http_output('UTF-8'); 
+mb_http_input('UTF-8'); 
+mb_regex_encoding('UTF-8'); 
 require('controller/masterController.php');
 
 $option = 0;
@@ -29,5 +46,4 @@ if(!empty($_POST)) {
 
 $master = new masterController();
 echo $master->run($option, $subOption);
-
 ?>

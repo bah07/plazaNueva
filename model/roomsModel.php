@@ -9,7 +9,7 @@ class roomsModel extends dbAbstractModel {
     }
 
     public function get($id) {
-        $this->query = "select * from rooms where id=".$id;
+        $this->query = "select * from roomstype where id=".$id;
         $this->dbQueryArray();
 
         return $this->arrayRes;

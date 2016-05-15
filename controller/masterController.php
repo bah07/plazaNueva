@@ -115,7 +115,7 @@ class masterController {
 
         // credenciales usuario
         $mail->Username = "b.arroba.h@gmail.com";
-        $mail->Password = "L056enQrr9";
+        $mail->Password = "";
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 

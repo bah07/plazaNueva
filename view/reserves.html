@@ -5,229 +5,30 @@
 <!-- CONTENT PAGE reserves -->
 <div class="w3-col s12 m12 l8 w3-row ">
 
-    <ul class="w3-navbar">
-        <li><a href="#" class="tablink" onclick="openCity(event,'selecHab')">Seleccionar Habitación</a></li>
-        <li><a href="#" class="tablink" onclick="openCity(event,'serAdi')">Servicios Adicionales</a></li>
-        <li><a href="#" class="tablink" onclick="openCity(event,'datosPerso')">Datos Personales</a></li>
-        <li><a href="#" class="tablink" onclick="openCity(event,'confRese')">Resumen reserva</a></li>
-    </ul>
-
-    <!-------------1)Seleccionar Habitacion-------------------------------------->
-    <div id="selecHab" class="w3-container w3-border reserva">
-        <p class="w3-text-shadow">Búsqueda:</p>
-        <select class="w3-select w3-row-padding " name="option">
-            <option value="" disabled selected>Selecciona el numero de habitaciones</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-        </select>
-        
-        <select class="w3-select w3-padding w3-row-padding" name="option">
-            <option value="" disabled selected>Número de noches</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-        </select>
-        
-        <div class="w3-row-padding">
-            <div class="w3-third">
-                <p>Fecha de entrada</p>
-                <input class="w3-input w3-border" type="text" placeholder="dd-mm-aaaa">
-            </div>
-            <div class="w3-third">
-                <p>Fecha de salida</p>
-                <input class="w3-input w3-border" type="text" placeholder="dd-mm-aaaa">
-            </div>
-        </div>
-        <!--FotoHabitacion-->
-        <div class="w3-row w3-margin w3-card">
-            <div class="w3-col s3 m3 l4">
-                <!--Foto habitacion-->
-                <img class="w3-image" src="images/habitacionMatrimonio.jpg" alt="Suite">
-            </div>
-            <!--Descripcion habitacion-->
-            <div class="w3-col s6 m6 l6 w3-padding w3-justify">
-                <h4>SUITE MATRIMONIO</h4>
-                <p>En nuestras habitaciones suites podrá disfrutar de sus vacaciones en familia o con amigos en el centro de Granada.</p>
-            </div>
-            
-        </div>
-        
-        <p class="w3-text-shadow">Condiciones:</p>
-        <div class="w3-row w3-container">
-            <div class="w3-col s3 m3 l3">
-                Solo alojamiento
-            </div>
-             <div class="w3-col  s3 m3 l3">
-                <p><button class="w3-btn w3-light-green w3-input w3-margin-top">Reservar</button></p>
-            </div>
-        </div>
-        <div class="w3-row w3-container">
-            <div class="w3-col s3 m3 l3">
-                Alojamiento + Desayuno
-            </div>
-             <div class="w3-col  s3 m3 l3">
-                <p><button class="w3-btn w3-light-green w3-input w3-margin-top">Reservar</button></p>
-            </div>
-        </div>
+    <div class="w3-container w3-blue">
+        <h2>Input Form</h2>
     </div>
+
+    <form class="w3-container">
+
+        <p>
+        <label>Nombre</label>
+        <input class="w3-input" type="text"></p>
+
+        <p>
+        <label>Apellidos</label>
+        <input class="w3-input" type="text"></p>
+
+        <p>
+        <label>Email</label>
+        <input class="w3-input" type="text"></p>
+        
+        <p>
+        <label>Teléfono</label>
+        <input class="w3-input" type="text"></p>
+
+    </form>
     
-    <!-------------2)Servicios Adicionales-------------------------------------->
-    <div id="serAdi" class="w3-container w3-border reserva">
-        <div class="w3-row w3-margin ">
-            <div class="w3-col s3 m3 l4">
-                <!--Foto habitacion-->
-                <img class="w3-image" src="images/cesta.jpg" alt="Suite">
-            </div>
-            <!--Descripcion habitacion-->
-            <div class="w3-col s6 m6 l6 w3-padding w3-justify">
-                <h4>Cesta de frutas + botella de cava</h4>
-            </div> 
-            
-            <select class="w3-container w3-row w3-select w3-col s3 m3 l3" name="option">
-                <option value="" disabled selected>Número de noches</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-            <select class="w3-container w3-row w3-select w3-col s3 m3 l3" name="option">
-                <option value="" disabled selected>Número de cestas</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-            <p class="w3-container w3-row w3-col s3 m3 l2">Precio/noche 15 euros  </p>
-        </div>
-        <div class="w3-row w3-col w3-margin s3 m3 l4 ">
-            <p class="w3-container w3-row">Total Euros : x </p>
-            <p><button class="w3-btn w3-light-green w3-input w3-margin-top">Confirmar</button></p>   
-        </div>  
-    </div>
-    
-    <!-------------3)Datos Personales-------------------------------------->
-    <div id="datosPerso" class="w3-container w3-margin-24   reserva">
-        <h4 class="w3-text-shadow">Resumen Reserva: </h4>
-        <div class="w3-container  w3-light-grey">
-                
-                <p>Estancia:</p>
-                <p>17-05-2016 / 21-05-2016</p>
-                <p>Habitación Selecionada:</p>
-                <div class="w3-row w3-margin">
-                    <div class="w3-col s3 m6 l6">
-                        <!--Foto habitacion-->
-                        <img class="w3-image" src="images/habitacionMatrimonio.jpg" alt="Suite">
-                    </div>
-                    <!--Descripcion habitacion-->
-                    <div class="w3-col s6 m6 l6 w3-padding w3-justify">
-                        <h4>SUITE MATRIMONIO</h4>
-                        <p>En nuestras habitaciones suites podrá disfrutar de sus vacaciones en familia o con amigos en el centro de Granada.</p>
-                    </div>
-
-                </div>
-        </div>
-        <h4 class="w3-text-shadow">Servicios Adicionales:Ninguno</h4>
-    
-        <h4 class="w3-text-shadow">Datos Personales:</h4>
-        
-            
-            <form class="w3-container w3-light-grey">
-                
-                <label>Nombre</label>
-                <input class="w3-input w3-border-0" type="text">
-                <label>Primer Apellido</label>
-                <input class="w3-input w3-border-0" type="text">
-                <label>Segundo Apellido</label>
-                <input class="w3-input w3-border-0" type="text">
-                <label>Pais</label>
-                <input class="w3-input w3-border-0" type="text">
-                <label>Ciudad</label>
-                <input class="w3-input w3-border-0" type="text">
-                <label>Telefono</label>
-                <input class="w3-input w3-border-0" type="text">
-                <label>Email</label>
-                <input class="w3-input w3-border-0" type="text">
-                
-                <label class="w3-label">Comentarios</label>
-                <input class="w3-input" type="text">
-            </form>    
-               
-        
-
-        <h4 class="w3-text-shadow">Datos Tarjeta:</h4>    
-            <form class="w3-container w3-light-grey">    
-                <select  name="option">
-                    <option value="" disabled selected>Elegir Tarjeta</option>
-                    <option value="1">Visa</option>
-                    <option value="2">MasterCard</option>
-                    <option value="3">American Express</option>
-                </select>
-                
-                <p> Fecha de caducidad </p>
-                <input class="w3-input w3-border" type="text" placeholder="dd-mm-aaaa">
-                <p> Numero de tarjeta </p>
-                <input class="w3-input w3-border" type="text" placeholder="aaaa-bbbb-cccc-dddd">
-                <p> Codigo de seguridad </p>
-                <input class="w3-input w3-border" type="text" placeholder="xxx">
-                
-            </form>
-    </div>
-
-    <!-----------Confirmación de reservas------------------------------------->
-    <div id="confRese" class="w3-container w3-border reserva">
-        <div class="w3-row">
-            <div class="w3-col s12 m6 l6 " >
-                <h4 class="w3-text-shadow">Resumen Alojamiento:</h4>
-                <p>Habitación: suite matrimonio</p>
-                <p>Número de habitaciones : 1 </p>
-                <p>Número de noches : 3 </p>
-                <p>Fecha entrada: 29 mayo 2016</p>
-                <p>Fecha salida: 2 junio 2016</p>
-            </div>
-            
-            <div class="w3-col s12 m6 l6 " >
-                <h4 class="w3-text-shadow">Datos Personales</h4>
-                <p>Nombre:Pepe</p>
-                <p>Primer Apellido:Fernandez</p>
-                <p>Segundo Apellido:Martinez</p>
-                <p>Pais:España</p>
-                <p>Ciudad:Granada</p>
-                <p>Telefono móvil:678912345</p>
-                <p>Email:fulanito@gmail.com</p>
-                <p>Comentarios: ventanas a la calle</p> 
-            </div>
-        </div>
-        <div class="w3-row">
-            <div class="w3-col s12 m6 l6 " >
-                <h4 class="w3-text-shadow">Servicios Adicionales</h4>
-                <p>Ninguno</p>
-            </div>
-            
-            <div class="w3-col s12 m6 l6 " >
-                <h4 class="w3-text-shadow">Datos tarjeta</h4>
-                <p>Tipo Tarjeta:Visa</p>
-                <p>Fecha caducidad:9/18</p>
-                <p>Numero de tarjeta: ****-****-****-1234</p>
-                <p>Código de tarjeta:198</p>
-            </div>
-        </div>
-        <div class="w3-row">
-            <div class="w3-col s12 m12 l12 " >
-                <p><button class="w3-btn w3-light-green w3-input w3-margin-top">Total a pagar: 180 euros </button></p>
-            </div>
-        </div>
-        <div class="w3-row">
-            <div class="w3-col s6 m3 l3 " >
-                
-            </div>
-            <div class="w3-col w3-margin-right s6 m3 l3 " >
-                <p><button class="w3-btn w3-red w3-input w3-margin-top">Anular Reserva </button></p>
-            </div>
-            <div class="w3-col w3-margin-left s6 m3 l3 " >
-                <p><button class="w3-btn w3-light-green w3-input w3-margin-top">Descargar Reserva </button></p>
-            </div>
-        </div>
-        
-    </div>
 </div>
 
 
