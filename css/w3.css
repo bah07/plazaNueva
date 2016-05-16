@@ -2,9 +2,11 @@ a:link
 {   
  text-decoration:none;   
 }
-.slideAuto {display:none}
+.slideAuto {display:none;}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
+.w3-badge {height:13px;width:13px;padding:0;}
+
+.slideBarside {display:none;}
 
 /* W3.CSS 2.3 by Jan Egil and Borge Refsnes. Do not remove this line. */
 * {
@@ -378,7 +380,7 @@ table, th, td {
 }
 
 .w3-badge, .w3-tag, .w3-sign {
-	background-color:#000;
+	/*background-color:#000;*/
 	color:#fff;
 	display:inline-block;
 	padding-left:8px;

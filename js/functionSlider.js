@@ -1,5 +1,8 @@
-
+/*******************************************/
 var slideIndex = 5;
+var slideBarIndexofertas = 0;
+/********************************************/
+
 showDivs(slideIndex);
 
 function plusDivs(n) {
@@ -12,6 +15,7 @@ function currentDiv(n) {
 
 function showDivs(n) {
   var i;
+  console.log("slideIndex="+slideIndex);
   var x = document.getElementsByClassName("slideAuto");
   var dots = document.getElementsByClassName("demo");
   
@@ -33,26 +37,26 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
 }
+/*******************************************/
 
-var slideBarIndex = 0;
 function funSlideBar() {
     var i;
-    var x = document.getElementsByClassName("slideBar");
+    var x = document.getElementsByClassName("slideBarside");
 
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
-    slideBarIndex++;
+    slideBarIndexofertas++;
 
-    if (slideBarIndex > x.length) {
-        slideBarIndex = 1
+    if (slideBarIndexofertas > x.length) {
+        slideBarIndexofertas = 1;
     }
-    x[slideBarIndex - 1].style.display = "block";
+    x[slideBarIndexofertas - 1].style.display = "block";
     setTimeout(funSlideBar, 2000);
 }
 
 
-
+/*******************************************/
 
 function changeContextMenu(option) {
     var x = document.getElementsByClassName("menu");
@@ -62,3 +66,5 @@ function changeContextMenu(option) {
     
     document.getElementById("menu"+option).className = "menu w3-padding-medium w3-theme-d1";
 }
+
+/*******************************************/
