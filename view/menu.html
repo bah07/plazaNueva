@@ -12,18 +12,25 @@
   <a href="index.php">Hotel</a>		
   <a href="index.php?option=1">Promociones</a>		
   <a href="index.php?option=2">Reservas</a>
-  <a href="index.php?option=3&room=0">Habitaciones</a>
-  <a href="index.php?option=3&subOption=1">Habitación individual</a>
-  <a href="index.php?option=3&subOption=2">Habitación doble</a>
-  <a href="index.php?option=3&subOption=3">Suite familiar</a>
+  <div class="w3-dropdown-hover">
+    <a href="index.php?option=3&room=0">Habitaciones <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+        <a href="index.php?option=3&subOption=1">Habitación individual</a>
+        <a href="index.php?option=3&subOption=2">Habitación doble</a>
+        <a href="index.php?option=3&subOption=3">Suite familiar</a>
+    </div>
+  </div>
+  
   <a href="index.php?option=4">Servicios</a>
   <a href="index.php?option=5&subOption=1">Ubicación</a>
   <a href="index.php?option=5&subOption=2">Contacto</a>
 </nav>
 
 <header class="w3-container w3-theme">
-  <span class="w3-opennav w3-xlarge" onclick="w3_open()">&#9776; </span>
-  Hotel Plaza Nueva  
+  <span class="w3-opennav w3-xlarge" onclick="w3_open()">&#9776; 
+      Hotel Plaza Nueva
+  </span>
+   
    
 </header>
 

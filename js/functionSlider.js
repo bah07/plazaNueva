@@ -68,3 +68,32 @@ function changeContextMenu(option) {
 }
 
 /*******************************************/
+
+var slideIndexpro=1;
+console.log("slideIndexpro="+slideIndexpro);
+showDivspro(slideIndexpro);
+
+function plusDivspro(n) {
+  showDivspro(slideIndexpro += n);
+}
+
+function currentDivpro(n) {
+  showDivspro(slideIndexpro = n);
+}
+
+function showDivspro(n) {
+    console.log("n = "+n);
+  var i;
+  var x = document.getElementsByClassName("slideB");
+  var dots = document.getElementsByClassName("demopro");
+  if (n > x.length) {slideIndexpro = 1}    
+  if (n < 1) {slideIndexpro = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndexpro-1].style.display = "block";  
+  dots[slideIndexpro-1].className += " w3-red";
+}
